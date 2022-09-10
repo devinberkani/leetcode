@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,9 +12,18 @@ public class Main {
 
     public static int numberOfWeakCharacters(int[][] properties) {
         int count = 0;
-        Arrays.sort(properties, (a, b) -> (b[0] == a[0]) ? (a[1] - b[1]) : (b[0] - a[0]));
+//        Arrays.sort(properties, (a, b) -> (b[0] == a[0]) ? (a[1] - b[1]) : (b[0] - a[0]));
+        Arrays.sort(properties, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] a, int[] b) {
+                return a[0] == b[0] ? a[1] - b[1] : b[0] - a[0];
+            }
+        });
+
+
         int max = 0;
         for (int[] property : properties) {
+            System.out.println(Arrays.toString(property));
             if (property[1] < max) {
                 count++;
             }
