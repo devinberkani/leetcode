@@ -65,5 +65,3 @@ public class Main {
 //        return Arrays.asList(input).equals(comparison);
     }
 }
-
-// (
