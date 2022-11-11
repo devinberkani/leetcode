@@ -5,10 +5,6 @@ public class Main {
 
     public static void moveZeroes(int[] nums) {
 
-//        for (int n : nums) {
-//            System.out.println(n);
-//        }
-
         if (nums.length == 1) {
             return;
         }
