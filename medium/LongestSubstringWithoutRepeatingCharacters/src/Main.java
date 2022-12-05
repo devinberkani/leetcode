@@ -9,7 +9,6 @@ public class Main {
 //abcabcbb
 //au
 //,./?;'[]1234   456abcHJKL
-
     public static int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) return 0;
         if (s.length() == 1) return 1;
