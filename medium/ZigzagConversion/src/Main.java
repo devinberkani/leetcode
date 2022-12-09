@@ -19,6 +19,7 @@ public class Main {
             if (!d) i++;
             else i--;
         }
+
         return String.join("", r);
     }
 }
