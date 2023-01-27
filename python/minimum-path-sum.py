@@ -12,10 +12,9 @@ class Solution(object):
 
         return grid[m - 1][n - 1]
 
+
 test1 = [[1,3,1],[1,5,1],[4,2,1]]
 test2 = [[1,2,3],[4,5,6]]
 
 print(Solution().minPathSum(test1))
 print(Solution().minPathSum(test2))
-
-        
