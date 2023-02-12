@@ -1,5 +1,4 @@
 import math
-
 class Solution(object):
     def isPalindrome(self, x):
         if x < 0:
@@ -11,7 +10,6 @@ class Solution(object):
             c += math.floor(x % 10)
             x = math.floor(x / 10)
         return o == c
-
 print(Solution().isPalindrome(12121))
 print(Solution().isPalindrome(-121))
 print(Solution().isPalindrome(10))
